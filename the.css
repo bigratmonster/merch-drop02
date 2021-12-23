@@ -1,0 +1,58 @@
+/* 
+Fonts: Inter (latest, loaded via @import), Cascadia Mono (version 2108.26, loaded from file)
+https://rsms.me/inter/, https://github.com/microsoft/cascadia-code/
+Both fonts (at the time of writing this) are licensed under the OFL-1.1 license.
+Thanks for making websites great & cool!
+*/
+
+@import url('https://rsms.me/inter/inter.css');
+@font-face {
+    font-family: "Cascadia Mono";
+    src: url(/font/Cascadia-Mono/woff2/CascadiaMono.woff2);
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Inter", sans-serif;
+    font-size: larger;
+    background-color: #212121;
+    color: #F4F4F4;
+}
+p, code {
+    margin: auto;
+}
+a {
+    color: lightgreen;
+}
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif; 
+    }
+}
+.monotext, code {
+    font-family: "Cascadia Mono", monospace;
+    font-weight: 350;
+}
+#content {
+    height: calc(100vh - 10em);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    margin: 0;
+    padding: inherit;
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    color: #212121;
+}
+#tagline {
+    padding: 1em;   
+}
+#tagline > .monotext {
+    font-size: smaller;
+}
